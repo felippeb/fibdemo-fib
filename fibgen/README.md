@@ -33,7 +33,6 @@ output should produce something like:
 
 ```
 $ nosetests
-```
 .......
 ----------------------------------------------------------------------
 Ran 7 tests in 0.003s
