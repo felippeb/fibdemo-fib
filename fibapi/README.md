@@ -19,7 +19,7 @@ $ python ./fibapi/fibapi.py
 In another shell: 
 
 ```
-curl localhost:5000/fib?num=9
+$ curl localhost:5000/fib?num=9
 ```
 
 Expected output:
