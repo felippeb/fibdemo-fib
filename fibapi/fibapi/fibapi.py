@@ -8,7 +8,7 @@
 #Import Python Libs
 from flask import Flask, jsonify
 from flask_restful import Resource, Api, reqparse
-import fibgen
+from fibgen import fibgen
 
 app = Flask(__name__)
 api = Api(app)

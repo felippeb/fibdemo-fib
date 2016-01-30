@@ -1,15 +1,15 @@
 # fibdemo-fib
 
-This project contains the fib api. This is a flask python api. It is provided on server using nginx, uWSGI, and supervisord.
+This project contains the fibapi flask app, fibgen python module, and various scripts.
 
-Usage:
+###bin
 
-$ python ./fibapi/fibapi.py
+Original scratchings at the problem. One in bash, something I knew how to do already. I reworked that in python.
 
-Build:
+###fibgen
 
-Test:
+fibgen.py from /bin rewritten as as python module. Includes setup and nosetests.
 
-provided nose is installed (pip install nose):
+###fibapi
 
-$ nosetests
+Flask api app wrapper for fibgen.py. Presents json list from num input
