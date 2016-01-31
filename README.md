@@ -12,4 +12,4 @@ fibgen.py from /bin rewritten as as python module. Includes setup and nosetests.
 
 ###fibapi
 
-Flask api app wrapper for fibgen.py. Presents json list from num input
+Flask api app wrapper for fibgen.py. Presents json list from num input.
