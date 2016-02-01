@@ -17,9 +17,9 @@ class FibAPI(Resource):
     def get(self):
 
         parser = reqparse.RequestParser()
-        parser.add_argument('num', type=int, help='num must be an int')
+        parser.add_argument('n', type=int, help='n must be an int')
         args = parser.parse_args()
-        fibout = list(fibgen.gen(args['num']))
+        fibout = list(fibgen.gen(args['n']))
  
         return jsonify(fibonacci_sequence = fibout) 
 

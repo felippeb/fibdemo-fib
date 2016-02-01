@@ -5,19 +5,22 @@
     Return Fibonacci sequence to the Nth number.
 '''
 
-def gen(num):
+def gen(n):
     fibseq = []
-    if num == 0:
-        fibseq.append(0)
-    elif num == 1:
-        fibseq.append(1)
-    elif num < 0:
+    if n == 0:
+        fibseq.append("nil")
+    elif n < 0:
         fibseq.append("error: num must be natural number")
-    elif num > 1:
+    elif n == 1:
+        fibseq.append(0)
+    elif n == 2:
+        fibseq = [0, 1]
+    elif n > 2:
+        fibseq.append(0)
         prevnum = 0
         curnum = 1
-        for n in range(1, num):
-            if n == 1:
+        for num in range(2, n):
+            if num == 2:
                 fibseq.append(1)
             fibnum = prevnum + curnum
             fibseq.append(fibnum)
