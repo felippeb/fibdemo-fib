@@ -19,15 +19,16 @@ $ python ./fibapi/fibapi.py
 In another shell: 
 
 ```
-$ curl localhost:5000/fib?num=9
+$ curl localhost:5000/fib?n=9
 ```
 
 Expected output:
 
 ```
-$ curl localhost:5000/fib?num=9
+$ curl localhost:5000/fib?n=9
 {
   "fibonacci_sequence": [
+    0,
     1,
     1,
     2,
@@ -35,8 +36,7 @@ $ curl localhost:5000/fib?num=9
     5,
     8,
     13,
-    21,
-    34
+    21
   ]
 }
 ```
