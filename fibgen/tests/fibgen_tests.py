@@ -21,6 +21,15 @@ def test_num_1_val():
     fibout = fibgen.gen(1)
     assert 0 in fibout
 
+def test_num_2_list():
+    fibout = fibgen.gen(2)
+    assert isinstance(fibout, list)
+
+def test_num_2_val():
+    fibout = fibgen.gen(2)
+    fibseq = [0, 1]
+    assert cmp(fibout, fibseq) == 0
+
 def test_num_10_list():
     fibout = fibgen.gen(10)
     assert isinstance(fibout, list)
